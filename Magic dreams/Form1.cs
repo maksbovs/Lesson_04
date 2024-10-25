@@ -21,5 +21,15 @@ namespace Magic_dreams
         {
 
         }
+
+        private void lbl_lose_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

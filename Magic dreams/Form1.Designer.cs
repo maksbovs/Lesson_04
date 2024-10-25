@@ -39,6 +39,8 @@ namespace Magic_dreams
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -49,7 +51,7 @@ namespace Magic_dreams
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::Magic_dreams.Properties.Resources.Screenshot_2024_10_25_090738;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 111);
+            this.pictureBox1.Location = new System.Drawing.Point(97, 111);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 189);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -61,7 +63,7 @@ namespace Magic_dreams
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Image = global::Magic_dreams.Properties.Resources.Screenshot_2024_10_25_090738;
-            this.pictureBox2.Location = new System.Drawing.Point(210, 111);
+            this.pictureBox2.Location = new System.Drawing.Point(238, 111);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(67, 189);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,7 +75,7 @@ namespace Magic_dreams
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox3.Image = global::Magic_dreams.Properties.Resources.Screenshot_2024_10_25_090738;
-            this.pictureBox3.Location = new System.Drawing.Point(347, 111);
+            this.pictureBox3.Location = new System.Drawing.Point(375, 111);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(67, 189);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -140,7 +142,7 @@ namespace Magic_dreams
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("High Tower Text", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label2.Location = new System.Drawing.Point(242, 321);
+            this.label2.Location = new System.Drawing.Point(263, 312);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(205, 40);
             this.label2.TabIndex = 8;
@@ -149,18 +151,40 @@ namespace Magic_dreams
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(249, 374);
+            this.textBox1.Location = new System.Drawing.Point(264, 364);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 48);
+            this.textBox1.Size = new System.Drawing.Size(198, 55);
             this.textBox1.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(34, 453);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(176, 66);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Play";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(271, 453);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(176, 66);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "New bid";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lbl_lose
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(459, 469);
+            this.ClientSize = new System.Drawing.Size(514, 562);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -174,6 +198,7 @@ namespace Magic_dreams
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "lbl_lose";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.lbl_lose_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -194,6 +219,8 @@ namespace Magic_dreams
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
